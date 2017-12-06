@@ -8,7 +8,7 @@ import javax.persistence.*;
 import org.springframework.security.core.GrantedAuthority;
 
 @Entity
-@Table(name="userdata")
+@Table(name="user")
 //@NamedQuery(name="User.findAll", query="SELECT u FROM User u")
 public class LoginUser implements Serializable {
 	private static final long serialVersionUID = 1L;
