@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.sample;
 
 import java.io.Serializable;
 import java.util.Collection;

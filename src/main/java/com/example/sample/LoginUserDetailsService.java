@@ -1,5 +1,4 @@
-/*
-package com.example.demo;
+package com.example.sample;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -22,4 +21,3 @@ public class LoginUserDetailsService implements UserDetailsService{
 		return new LoginUserDetails(loginUser); 
 	}
 }
-*/
