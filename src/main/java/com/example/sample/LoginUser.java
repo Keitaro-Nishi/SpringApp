@@ -1,3 +1,4 @@
+/*
 package com.example.sample;
 
 import java.io.Serializable;
@@ -19,17 +20,17 @@ public class LoginUser implements Serializable {
 
 	private String password;
 
-	private Collection<? extends GrantedAuthority> auth;
+	private Collection<? extends GrantedAuthority> reserve;
 
 
 	
 	public LoginUser() {
 	}
 	
-	public LoginUser(String userid, String password, Collection<? extends GrantedAuthority> auth) {
+	public LoginUser(String userid, String password, Collection<? extends GrantedAuthority> reserve) {
         this.userid = userid;
         this.password = password;
-        this.auth = auth;
+        this.reserve = reserve;
     }
 
 	public String getUserid() {
@@ -48,11 +49,12 @@ public class LoginUser implements Serializable {
 		this.password = password;
 	}
 	
-	public Collection<? extends GrantedAuthority> getAuth() {
-		return this.auth;
+	public Collection<? extends GrantedAuthority> getReserve() {
+		return this.reserve;
 	}
 
-	public void setAuth(Collection<? extends GrantedAuthority> auth) {
-		this.auth = auth;
+	public void setReserve(Collection<? extends GrantedAuthority> reserve) {
+		this.reserve = reserve;
 	}
 }
+*/

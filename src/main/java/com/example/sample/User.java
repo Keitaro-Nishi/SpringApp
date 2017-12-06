@@ -1,22 +1,17 @@
+
 package com.example.sample;
 
 import java.io.Serializable;
 import javax.persistence.*;
 
-
-/**
- * The persistent class for the chatbot database table.
- * 
- */
 @Entity
-@Table(name="chatbot")
+@Table(name="userdata")
 public class User implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
 	@GeneratedValue
 	private Integer no;
-
 	@Column
 	private String userid;
 	@Column
@@ -26,23 +21,23 @@ public class User implements Serializable {
 	@Column
 	private String password;
 	@Column
-	private String effect;
+	private String role;
 	@Column
-	private String auth;
+	private String reserve;
 	
 	
 
 	public User() {
 	}
 	
-	public User(Integer no,String userid,String username,String orgname,String password,String effect,String auth) {
+	public User(Integer no,String userid,String username,String orgname,String password,String role,String reserve){
 		this.no = no;
 		this.userid = userid;
         this.username = username;
         this.orgname = orgname;
         this.password = password;
-        this.effect = effect;
-        this.auth = auth;
+        this.role = role;
+        this.reserve = reserve;
     }
 
 	public Integer getNo() {
@@ -84,20 +79,20 @@ public class User implements Serializable {
 		this.password = password;
 	}
 	
-	public String getEffect() {
-		return this.effect;
+	public String getRole() {
+		return this.role;
 	}
 
-	public void setEffect(String effect) {
-		this.effect = effect;
+	public void setRole(String role) {
+		this.role = role;
 	}
 
-	public String getAuth() {
-		return this.auth;
+	public String getReserve() {
+		return this.reserve;
 	}
 
-	public void setAuth(String auth) {
-		this.auth = auth;
+	public void setAuth(String reserve) {
+		this.reserve = reserve;
 	}
 
 

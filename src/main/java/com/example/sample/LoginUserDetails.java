@@ -1,3 +1,4 @@
+/*
 package com.example.sample;
 
 import lombok.Data;
@@ -16,3 +17,4 @@ public class LoginUserDetails extends org.springframework.security.core.userdeta
 		return loginUser;
 	}
 }
+*/

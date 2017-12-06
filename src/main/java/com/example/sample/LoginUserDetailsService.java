@@ -1,3 +1,4 @@
+/*
 package com.example.sample;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,3 +22,4 @@ public class LoginUserDetailsService implements UserDetailsService{
 		return new LoginUserDetails(loginUser); 
 	}
 }
+*/
