@@ -3,12 +3,12 @@ package com.example.sample;
 public class UserForm {
 
 	private Integer no;
-	private String userid;
-	private String username;
+	private String custid;
+	private String custname;
 	private String orgname;
 	private String password;
-	private String effect;
-	private String auth;
+	private String rool;
+	private String reserve;
 	
 	public Integer getNo() {
 		return no;
@@ -19,20 +19,20 @@ public class UserForm {
 	}
 	
     
-    public String getUserid() {
-        return userid;
+    public String getCustid() {
+        return custid;
     }
 
-    public void setUserid(String userid) {
-        this.userid = userid;
+    public void setCustid(String Custid) {
+        this.Custid = custid;
     }
     
-    public String getUsername() {
-        return username;
+    public String getCustname() {
+        return custname;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
+    public void setCustname(String custname) {
+        this.custname = custname;
     }
     
     public String getOrgname() {
@@ -51,21 +51,19 @@ public class UserForm {
         this.password = password;
     }
     
-    public String getEffect() {
-        return effect;
+    public String getRole() {
+        return role;
     }
 
-    public void setEffect(String effect) {
-        this.effect = effect;
+    public void setRole(String role) {
+        this.role = role;
     }
     
-    public String getAuth() {
-        return auth;
+    public String getReserve() {
+        return reserve;
     }
 
-    public void setAuth(String auth) {
-        this.auth = auth;
+    public void setReserve(String reserve) {
+        this.reserve = reserve;
     }
-    
-    
 }

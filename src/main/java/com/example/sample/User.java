@@ -13,9 +13,9 @@ public class User implements Serializable {
 	@GeneratedValue
 	private Integer no;
 	@Column
-	private String userid;
+	private String custid;
 	@Column
-	private String username;
+	private String custname;
 	@Column
 	private String orgname;
 	@Column
@@ -30,10 +30,10 @@ public class User implements Serializable {
 	public User() {
 	}
 	
-	public User(Integer no,String userid,String username,String orgname,String password,String role,String reserve){
+	public User(Integer no,String custid,String custname,String orgname,String password,String role,String reserve){
 		this.no = no;
-		this.userid = userid;
-        this.username = username;
+		this.custid = custid;
+        this.custname = custname;
         this.orgname = orgname;
         this.password = password;
         this.role = role;
@@ -47,20 +47,20 @@ public class User implements Serializable {
 	public void setNo(Integer no) {
 		this.no = no;
 	}
-	public String getUserid() {
-		return this.userid;
+	public String getCustid() {
+		return this.custid;
 	}
 
-	public void setUserid(String userid) {
-		this.userid = userid;
+	public void setCustid(String custid) {
+		this.custid = custid;
 	}
 
-	public String getUsername() {
-		return this.username;
+	public String getCustname() {
+		return this.custname;
 	}
 
-	public void setUsername(String username) {
-		this.username = username;
+	public void setCustname(String custname) {
+		this.custname = custname;
 	}
 	
 	public String getOrgname() {
@@ -94,6 +94,4 @@ public class User implements Serializable {
 	public void setAuth(String reserve) {
 		this.reserve = reserve;
 	}
-
-
 }
