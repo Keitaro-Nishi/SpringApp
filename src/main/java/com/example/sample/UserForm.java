@@ -24,7 +24,7 @@ public class UserForm {
     }
 
     public void setCustid(String Custid) {
-        this.Custid = custid;
+        this.custid = custid;
     }
     
     public String getCustname() {
