@@ -35,7 +35,7 @@ public class LoginUser implements Serializable {
 	}
 
 	public void setCustid(String custid) {
-		this.userid = custid;
+		this.custid = custid;
 	}
 	
 	public String getPassword() {

@@ -8,7 +8,7 @@ public class LoginUserDetails extends org.springframework.security.core.userdeta
 	private final LoginUser loginUser;
 	
 	public LoginUserDetails(LoginUser loginUser) {
-		super(loginUser.getUserid(), loginUser.getPassword(), loginUser.getAuth());
+		super(loginUser.getCustid(), loginUser.getPassword(), loginUser.getReserve());
 		this.loginUser = loginUser;
 	}
 
