@@ -39,7 +39,10 @@ public class UserController {
 		return "login";
 	}
 	
-	
+	@RequestMapping("/signup")
+	String signup() {
+		return "signup";
+	}	
 	
 	//登録
 	@GetMapping("/signup")
