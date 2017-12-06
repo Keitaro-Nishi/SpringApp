@@ -7,7 +7,7 @@ public class UserForm {
 	private String custname;
 	private String orgname;
 	private String password;
-	private String rool;
+	private String role;
 	private String reserve;
 	
 	public Integer getNo() {

@@ -91,7 +91,7 @@ public class User implements Serializable {
 		return this.reserve;
 	}
 
-	public void setAuth(String reserve) {
+	public void setReserve(String reserve) {
 		this.reserve = reserve;
 	}
 }
