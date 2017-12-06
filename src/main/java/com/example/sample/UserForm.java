@@ -23,7 +23,7 @@ public class UserForm {
         return custid;
     }
 
-    public void setCustid(String Custid) {
+    public void setCustid(String custid) {
         this.custid = custid;
     }
     
