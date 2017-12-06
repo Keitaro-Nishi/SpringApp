@@ -1,4 +1,3 @@
-/*
 package com.example.sample;
 
 import java.io.Serializable;
@@ -16,29 +15,27 @@ public class LoginUser implements Serializable {
 
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	private String userid;
+	private String custid;
 
 	private String password;
 
 	private Collection<? extends GrantedAuthority> reserve;
 
-
-	
 	public LoginUser() {
 	}
 	
-	public LoginUser(String userid, String password, Collection<? extends GrantedAuthority> reserve) {
-        this.userid = userid;
+	public LoginUser(String custid, String password, Collection<? extends GrantedAuthority> reserve) {
+        this.custid = custid;
         this.password = password;
         this.reserve = reserve;
     }
 
-	public String getUserid() {
-		return this.userid;
+	public String getCustid() {
+		return this.custid;
 	}
 
-	public void setUserid(String userid) {
-		this.userid = userid;
+	public void setCustid(String custid) {
+		this.userid = custid;
 	}
 	
 	public String getPassword() {
@@ -57,4 +54,3 @@ public class LoginUser implements Serializable {
 		this.reserve = reserve;
 	}
 }
-*/

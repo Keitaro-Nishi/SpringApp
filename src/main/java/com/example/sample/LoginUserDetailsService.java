@@ -1,4 +1,3 @@
-/*
 package com.example.sample;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,13 +12,12 @@ public class LoginUserDetailsService implements UserDetailsService{
 	LoginUserRepository loginUserRepository;
 	
 	@Override
-	public UserDetails loadUserByUsername(String userid) throws UsernameNotFoundException{
+	public UserDetails loadUserByUsername(String custid) throws UsernameNotFoundException{
 
-		LoginUser loginUser = loginUserRepository.findOne(userid);
+		LoginUser loginUser = loginUserRepository.findOne(custid);
 		if (loginUser == null) {
 			throw new UsernameNotFoundException("該当するユーザが見つかりません");
 		}
 		return new LoginUserDetails(loginUser); 
 	}
 }
-*/
